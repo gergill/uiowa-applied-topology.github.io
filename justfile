@@ -1,3 +1,7 @@
+# Build the website
+build:
+	hugo build
+
 # Initialize submodules
 init:
 	git submodule update --init --recursive
@@ -6,6 +10,6 @@ init:
 update-blowfish:
 	git submodule update --remote --merge themes/blowfish
 
-# Build serve a local version of the website
+# Start a development server for working on the website
 serve:
 	hugo serve
