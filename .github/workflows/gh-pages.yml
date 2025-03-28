@@ -25,6 +25,8 @@ jobs:
       # Configure the runner
       - name: git checkout
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@main
       - uses: DeterminateSystems/magic-nix-cache-action@main
