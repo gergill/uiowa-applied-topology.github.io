@@ -1,4 +1,4 @@
 +++
-title = "Tanglenomicon"
+title = "The Tanglenomicon"
 authors = ["jstarr"]
 +++
