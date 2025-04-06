@@ -1,6 +1,7 @@
 +++
 title = "Zen Mapper"
 authors = ["erooke"]
+layout = "single"
 +++
 
 

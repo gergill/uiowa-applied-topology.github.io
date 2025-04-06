@@ -1,3 +1,4 @@
 +++
 title = "MappeR"
+layout = "single"
 +++

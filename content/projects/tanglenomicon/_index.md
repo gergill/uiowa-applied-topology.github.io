@@ -1,6 +1,7 @@
 +++
 title = "The Tanglenomicon"
 authors = ["jstarr"]
+layout = "single"
 +++
 
 {{< mathjax >}}
@@ -32,7 +33,7 @@ piece of string, tying it into a knot, and then joining the ends together,
 creating a knot that can be studied mathematically.
 
 {{< figure
-    src="5_1.svg"
+    src="media/5_1.svg"
     alt="Knot $5_1$"
     caption="Knot $5_1$ by [knotplot](https://knotplot.com/)"
     >}}
@@ -68,7 +69,7 @@ nineteen crossings, highlighting the computational challenges of knot
 tabulation.
 
 {{< figure
-    src="knots_to_7.svg"
+    src="media/knots_to_7.svg"
     alt="Knot to seven crossings"
     caption="Knots up to seven crossings by [knotplot](https://knotplot.com/)"
     >}}
@@ -79,21 +80,19 @@ A tangle is a distinct portion of a knot diagram characterized by four arcs
 extending in the compass directions: northwest (NW), northeast (NE), southwest
 (SW), and southeast (SE) {{< cite "conwayEnumerationKnotsLinks1970">}}. This
 portion is bounded by a Conway circle
-{{< cite "conwayEnumerationKnotsLinks1970">}} , a
+{{< cite "conwayEnumerationKnotsLinks1970">}}, a
 [Jordan curve](https://en.wikipedia.org/wiki/Curve#Jordan) intersecting the knot
 diagram at exactly four points. Tangles serve as fundamental components in knot
 theory, facilitating the construction and analysis of complex knots
 {{< cite "conwayEnumerationKnotsLinks1970">}}.
 
 {{< figure
-    src="tangle_maker.svg"
+    src="media/tangle_maker.svg"
     alt="Making a tangle"
     caption="making a tangle by [Joe Starr](https://joe-starr.com/)"
     >}}
 
-## Introduction to Our Tangle Tabulation Projects
-
-Our group is engaged in several tangle tabulation projects, including:
+{{< list title="Our Tangle Tabulation Projects" limit=100 where="Type" value="tangle_tabulation" >}}
 
 ## References
 
