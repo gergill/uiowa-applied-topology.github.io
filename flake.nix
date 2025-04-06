@@ -16,6 +16,7 @@
       packages = [
         pkgs.hugo
         pkgs.just
+        pkgs.tailwindcss
       ];
 
       shellHook = ''
