@@ -42,23 +42,28 @@ creating a knot that can be studied mathematically.
 Interest in knot tabulation began in the 1860s, when Lord Kelvin hypothesized
 that atoms were knotted vortices in the aether. This idea led to the creation of
 the first knot table by P.G. Tait, who manually computed tables of prime knots
-up to seven crossings. Tait, along with Kirkman and Little, continued this work
-for 25 years, eventually publishing a complete list of prime knots up to ten
-crossings. Their tables contained a single error, which was corrected in 1974 by
-Perko, an amateur mathematician.
+up to seven crossings {{< cite "taitFirstSevenOrders1884" >}}. Tait, along with
+Kirkman and Little, continued this work for 25 years, eventually publishing a
+complete list of prime knots up to ten crossings
+{{< cite "taitTenfoldKnottiness1885" >}}{{< cite "kirkmanEnumerationDescriptionConstruction1885" >}}{{< cite "littleKnotsCensusOrder1885" >}}.
+Their tables contained a single error, which was corrected in 1974 by Perko, an
+amateur mathematician {{< cite "perkoClassificationKnots1974" >}}.
 
-In the 1960s, J.H. Conway introduced a novel approach to knot tabulation by
-breaking knots into simpler components called tangles. Conway's tangle calculus
-made the combinatorial work of knot tabulation more manageable. This approach
-was later verified and expanded by Caudron, marking the end of the hand
-computation era.
+In the 1960s, J.H. Conway introduced
+{{< cite "conwayEnumerationKnotsLinks1970">}} a novel approach to knot
+tabulation by breaking knots into simpler components called tangles. Conway's
+tangle calculus made the combinatorial work of knot tabulation more manageable.
+This approach was later verified and expanded by Caudron, marking the end of the
+hand computation era.
 
 With the advent of electronic computers in the early 1980s, researchers like
-Dowker and Thistlethwaite began using computers to construct knot tables. Their
-two-pass approach, which involved enumerating all knot projections and computing
-invariants to distinguish them, became the standard for subsequent efforts.
-Hoste, Thistlethwaite, and Weeks used a similar method to extended knot tables
-to sixteen crossings in 1998. Burton's 2020 effort pushed the boundary to
+Dowker and Thistlethwaite {{< cite "dowkerClassificationKnotProjections1983" >}}
+began using computers to construct knot tables. Their two-pass approach, which
+involved enumerating all knot projections and computing invariants to
+distinguish them, became the standard for subsequent efforts. Hoste,
+Thistlethwaite, and Weeks {{< cite "hosteFirst1701936Knots1998" >}} used a
+similar method to extended knot tables to sixteen crossings in 1998. Burton's
+2020 effort {{< cite "burtonNext350Million2020" >}} pushed the boundary to
 nineteen crossings, highlighting the computational challenges of knot
 tabulation.
 
@@ -72,10 +77,13 @@ tabulation.
 
 A tangle is a distinct portion of a knot diagram characterized by four arcs
 extending in the compass directions: northwest (NW), northeast (NE), southwest
-(SW), and southeast (SE). This portion is bounded by a Conway circle, a
+(SW), and southeast (SE) {{< cite "conwayEnumerationKnotsLinks1970">}}. This
+portion is bounded by a Conway circle
+{{< cite "conwayEnumerationKnotsLinks1970">}} , a
 [Jordan curve](https://en.wikipedia.org/wiki/Curve#Jordan) intersecting the knot
 diagram at exactly four points. Tangles serve as fundamental components in knot
-theory, facilitating the construction and analysis of complex knots.
+theory, facilitating the construction and analysis of complex knots
+{{< cite "conwayEnumerationKnotsLinks1970">}}.
 
 {{< figure
     src="tangle_maker.svg"
@@ -86,3 +94,7 @@ theory, facilitating the construction and analysis of complex knots.
 ## Introduction to Our Tangle Tabulation Projects
 
 Our group is engaged in several tangle tabulation projects, including:
+
+## References
+
+{{< references >}}
