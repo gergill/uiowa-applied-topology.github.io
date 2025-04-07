@@ -6,8 +6,13 @@ build:
 init:
 	git submodule update --init --recursive
 
+# Init tailwind css
+[working-directory: 'themes/blowfish']
+init-tailwind:
+    npm install
+
 # Compile tailwind css
-update-tailwind:
+update-tailwind: init-tailwind
 	tailwindcss -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit
 
 # Download the most recent version of the blowfish theme
