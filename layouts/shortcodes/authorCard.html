@@ -1,0 +1,77 @@
+{{ $disableImageOptimization := .Site.Params.disableImageOptimization | default false }}
+{{ $authorsData := .Site.Data.authors }}
+{{ $taxonomies := .Site.Taxonomies.authors }}
+{{ $baseURL := .Site.BaseURL }}
+{{ $taxonomyLink := 0 }}
+{{ $showAuthor := 0 }}
+{{ $author := .Get 0  }}
+{{ $icon := .Get 1 | default "star"  }}
+
+{{ $authorData := index $authorsData $author }}
+{{- if $authorData -}}
+  {{ range $taxonomyname, $taxonomy := $taxonomies }}
+    {{ if (eq $taxonomyname $author) }}
+      {{ $taxonomyLink = delimit (slice $baseURL "authors/" $author "/") "" }}
+    {{ end }}
+  {{ end }}
+
+  <li>
+    <div class="flex justify-start">
+      <div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words">
+        <div class="flex flex-col justify-stretch content-center">
+            <div class="m-0 flex-1 ">
+                <div class="flex justify-center">
+                        {{ with $authorData.image }}
+                            {{ $authorImage := resources.Get . }}
+                            {{ if $authorImage }}
+                                {{ if not $disableImageOptimization }}
+                                    {{ $authorImage = $authorImage.Fill "200x200" }}
+                                {{ end }}
+                                <img class="!mt-0 !mb-0 max-h-48 max-w-48 rounded-full "
+                                    src="{{ $authorImage.RelPermalink }}" />
+                            {{ else }}
+                                {{ $authorImage := resources.GetRemote . }}
+                                {{ if not $disableImageOptimization }}
+                                    {{ $authorImage = $authorImage.Fill "200x200" }}
+                                {{ end }}
+                                <img class="!mt-0 !mb-0 max-h-48 max-w-48 rounded-full "
+                                    src="{{ $authorImage.RelPermalink }}" />
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+        <div class="m-0 flex-auto h-full self-center ">
+            <div class="flex flex-col justify-center">
+                {{ with $authorData.name | markdownify }}
+                        <h1 class="mt-0 text-center">
+                        {{ . }}
+                        </h1>
+                        <div class="mb-6 text-4xl" >
+                            <div class="flex justify-evenly flex-wrap text-neutral-400 dark:text-neutral-500">
+                                {{ range $authorData.social }}
+                                    {{ range $name, $link := . }}
+                                    <a class="px-1 hover:text-primary-700 dark:hover:text-primary-400" href="{{ $link }}" target="_blank"
+                                        aria-label="{{ $name | title }}" rel="me noopener noreferrer">
+                                        <span class=" inline-block align-text-bottom">
+                                            {{ partial "icon.html" $name }}
+                                        </span>
+                                    </a>
+                                    {{ end }}
+                                {{ end }}
+                                </div>
+                        </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+        <div class="mt-3 flex flex-col justify-between">
+         {{ with $authorData.fullbio | markdownify }}
+            {{ . }}
+          {{ end }}
+        </div>
+
+      </div>
+    </div>
+  </li>
+
+{{- end -}}
