@@ -10,8 +10,3 @@ title = "UIAT"
   dateFormat = "2 January 2006"
   logo = "/img/logo.svg"
   description = ""
-
-[params.author]
-  name = "UIAT"
-  image = "/img/logo.svg"
-  headline = "Advancing the field of applied topology at the University of Iowa"
