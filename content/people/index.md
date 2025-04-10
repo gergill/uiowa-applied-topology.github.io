@@ -6,44 +6,44 @@ title = "People"
 {{< authorCard "idarcy" >}}
 {{< /authorList >}}
 
-# Topological Data Analysis
+## Topological Data Analysis
 
-## Current Students
+### Current Students
 
 {{< authorList >}}
 {{< authorCard "george_clare_kennedy" >}}
 {{< authorCard "jacob_miller" >}}
 {{< /authorList >}}
 
-## Past Students
+### Past Students
 
 {{< authorList >}}
 {{< authorCard "erooke" >}}
 {{< /authorList >}}
 
 
-## Collaborators
+### Collaborators
 
 {{< authorList >}}
 {{< authorCard "robert_deyeso" >}}
 {{< /authorList >}}
 
-# Applied Knot Theory
+## Applied Knot Theory
 
-## Current Students
+### Current Students
 
 {{< authorList >}}
 {{< authorCard "jstarr" >}}
 {{< authorCard "paria_karimi" >}}
 {{< /authorList >}}
 
-## Past Students
+### Past Students
 
 {{< authorList >}}
 {{< authorCard "zachary_bryhtan" >}}
 {{< /authorList >}}
 
-## Collaborators
+### Collaborators
 
 {{< authorList >}}
 {{< /authorList >}}

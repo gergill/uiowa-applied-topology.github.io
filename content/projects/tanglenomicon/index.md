@@ -1,4 +1,0 @@
-+++
-title = "Tanglenomicon"
-authors = ["jstarr"]
-+++
