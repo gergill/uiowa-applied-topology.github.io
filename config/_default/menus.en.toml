@@ -32,9 +32,9 @@
   pageRef = "projects/tanglenomicon"
 
 [[main]]
-  name = "MappeR"
+  name = "mappeR"
   parent = "Projects"
-  pageRef = "projects/mapper"
+  pageRef = "projects/mappeR"
 
 [[main]]
   name = "Zen Mapper"
