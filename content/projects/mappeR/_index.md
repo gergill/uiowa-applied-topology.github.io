@@ -18,7 +18,7 @@ implementation of the mapper algorithm, as Dr. Paul Pearson's popular [TDAMapper
 install.packages("mappeR")
 ```
 
-You can then load the package (in a script, say) with
+You can then load the package (in an R script, say) with
 
 ```r
 library(mappeR)
@@ -26,9 +26,8 @@ library(mappeR)
 
 ## Nix
 
-As a part of CRAN, `mappeR` is availiable on `nixpkgs`. You can open a `nix-shell` with
-`mappeR` configured by running
+As a part of CRAN, `mappeR` is availiable on `nixpkgs` version 25.05 or later. You can open a `nix-shell` with R and `mappeR` configured by running
 
 ```sh
-nix-shell -p rPackages.mappeR
+nix-shell -p R rPackages.mappeR
 ```
