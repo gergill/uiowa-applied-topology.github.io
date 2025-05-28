@@ -1,9 +1,8 @@
 +++
 title = "mappeR"
+authors = ["george_clare_kennedy"]
 layout = "single"
 +++
-
-# Motivation
 
 The development of mappeR was motivated by the need for an updated R
 implementation of the mapper algorithm, as Dr. Paul Pearson's popular [TDAMapper](https://github.com/paultpearson/TDAmapper/) package is no longer being updated or supported by CRAN.
